@@ -230,3 +230,146 @@
 // console.log(calc(10, 5));
 // console.log(calc(7, 3));
 
+                        //  26 zanatie - dop.mat., function  //
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+
+// function convert (amount, curr) {
+//     console.log(curr * amount);
+// }
+
+// convert(500, usdCurr);
+// convert(500, eurCurr);
+
+                       // 27 zanatie - pro vajnost' return  //
+               
+// const usdCurr = 28;
+// const eurCurr = 32;
+// const discount = 0.9;
+
+// function convert (amount, curr) {
+//     return curr * amount;
+// }
+
+// function promotion(result) {
+//     console.log(result * discount);
+// }
+
+// const res = convert(500, usdCurr);
+// promotion(res);
+
+// function test() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         if (i === 3) return
+//     }
+//     console.log('Done');
+// }
+
+// test();
+
+// function doNothing() {};
+// console.log(doNothing() === undefined);
+
+
+                       // 28 zanatie - metodi i svoistva stok i chisel  //
+
+// const str = "teSt";
+
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+
+// console.log(str);
+
+// const fruit = 'Some fruit';
+
+// console.log(fruit.indexOf("q"));
+
+// const logg = 'Hello world';
+
+// console.log(logg.slice(6, 11));
+
+// console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 11));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+
+
+                       // 29 zanatie - practicheskoe zanyatie #3  //
+
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+    }
+}
+
+start();
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+function rememberMyFilms() {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+              b = prompt('На сколько оцените его?', '');
+    
+        if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
+            personalMovieDB.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('Error');
+            i--;
+        }
+    }
+}
+
+rememberMyFilms();
+
+function detectPersonaLevel() {
+    if (personalMovieDB.count > 30) {
+        alert('Вы киноман');
+    } else if (personalMovieDB.count >= 10) {
+        alert('Вы классический зритель');
+    } else if (personalMovieDB.count < 10) {
+        alert('Просмотренно довольно мало фильмов');
+    } else {
+        alert('Произошла ошибка');
+    }
+}
+
+detectPersonaLevel();
+
+function writeYourGenres() {
+    for (let i = 0; i < 3; i++) {
+        personalMovieDB.genres[i] = prompt(`Ваш любимый жанр под номером ${i + 1}`);
+    }
+}
+
+writeYourGenres();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+}
+
+showMyDB(personalMovieDB.privat);
+
