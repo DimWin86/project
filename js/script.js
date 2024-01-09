@@ -608,68 +608,250 @@
 
                     // 37 zanyatie - practicheskoe zanyatie №4  //
 
-const personalMovieDB = {
-    count: 0,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false,
-    start: function () {
-        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const personalMovieDB = {
+//     count: 0,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false,
+//     start: function () {
+//         personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
     
-        while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
-            personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
-        }
-    },
-    rememberMyFilms: function () {
-        for (let i = 0; i < 2; i++) {
-            const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
-                  b = prompt('На сколько оцените его?', '').trim();
+//         while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+//             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//         }
+//     },
+//     rememberMyFilms: function () {
+//         for (let i = 0; i < 2; i++) {
+//             const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
+//                   b = prompt('На сколько оцените его?', '').trim();
         
-            if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
-                personalMovieDB.movies[a] = b;
-                console.log('done');
-            } else {
-                console.log('Error');
-                i--;
-            }
-        }
-    },
-    detectPersonaLevel: function () {
-        if (personalMovieDB.count > 30) {
-            alert('Вы киноман');
-        } else if (personalMovieDB.count >= 10) {
-            alert('Вы классический зритель');
-        } else if (personalMovieDB.count < 10) {
-            alert('Просмотренно довольно мало фильмов');
-        } else {
-            alert('Произошла ошибка');
-        }
-    },
-    showMyDB: function (hidden) {
-        if (!hidden) {
-            console.log(personalMovieDB);
-        }
-    },
-    toggleVisibleMyDB: function () {
-        if (personalMovieDB.privat) {
-            personalMovieDB.privat = false;
-        } else {
-            personalMovieDB.privat = true;
-        }
-    },
-    writeYourGenres: function () {
-        for (let i = 0; i < 3; i++) {
-            const genere = prompt(`Ваш любимый жанр под номером ${i + 1}`);
-            if (genere != null && genere != '') {
-                personalMovieDB.genres[i] = genere;
-            } else {
-                i--;
-            }
-        }
+//             if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
+//                 personalMovieDB.movies[a] = b;
+//                 console.log('done');
+//             } else {
+//                 console.log('Error');
+//                 i--;
+//             }
+//         }
+//     },
+//     detectPersonaLevel: function () {
+//         if (personalMovieDB.count > 30) {
+//             alert('Вы киноман');
+//         } else if (personalMovieDB.count >= 10) {
+//             alert('Вы классический зритель');
+//         } else if (personalMovieDB.count < 10) {
+//             alert('Просмотренно довольно мало фильмов');
+//         } else {
+//             alert('Произошла ошибка');
+//         }
+//     },
+//     showMyDB: function (hidden) {
+//         if (!hidden) {
+//             console.log(personalMovieDB);
+//         }
+//     },
+//     toggleVisibleMyDB: function () {
+//         if (personalMovieDB.privat) {
+//             personalMovieDB.privat = false;
+//         } else {
+//             personalMovieDB.privat = true;
+//         }
+//     },
+//     writeYourGenres: function () {
+//         for (let i = 0; i < 3; i++) {
+//             const genere = prompt(`Ваш любимый жанр под номером ${i + 1}`);
+//             if (genere != null && genere != '') {
+//                 personalMovieDB.genres[i] = genere;
+//             } else {
+//                 i--;
+//             }
+//         }
 
-        personalMovieDB.genres.forEach((item, i) => {
-            console.log(`Любимый жанр ${i + 1} - это ${item}`);
-        });
-    }
-};
+//         personalMovieDB.genres.forEach((item, i) => {
+//             console.log(`Любимый жанр ${i + 1} - это ${item}`);
+//         });
+//     }
+// };
+
+                    // 38 zanyatie - search errors in console  //
+
+// function hello() {
+//     console.log('Hello World');
+// }
+
+// hello();
+
+// function hi() {
+//     console.log('Say hi!');
+// }
+
+// hi();
+
+// const arr = [1, 14, 4, 30, 54],
+//       sorted = ar.sort(compareNum);
+
+// function compareNum(a, b) {
+//     return a - b;
+// }
+
+// console.log(sorted);
+
+                    // 39 zanyatie - dynamic tipization  //
+
+
+///////////////////////////////////////////////////////////////////////
+// To String
+
+// 1)
+// console.log(typeof(String(null)));
+// console.log(typeof(String(4)));
+
+// 2)
+// console.log(typeof(5 + ''));
+// console.log(typeof(null + ''));
+
+// const num = 5;
+
+// console.log("https://vk.com/catalog/" + num);
+
+// const fontSize = 26 + 'px';
+///////////////////////////////////////////////////////////////////////
+// To Number
+
+// 1) 
+// console.log(typeof(Number('4')));
+
+// // 2)
+// console.log(typeof(+'5'));
+
+// 3)
+// console.log(typeof(parseInt('15px', 10)));
+
+// let answer = +prompt('Hello', '');
+
+///////////////////////////////////////////////////////////////////////
+
+// To boolean
+
+// 0, '', null, undefined, NaN === false
+
+// 1)
+// let switcher = null;
+
+// if (switcher) {
+//     console.log('Working...');
+// }
+
+// switcher = 1;
+
+// if (switcher) {
+    // console.log('Working...');
+// }
+
+// 2)
+// console.log(typeof(Boolean(1)));
+
+// 3)
+// console.log(typeof(!!'444'));
+
+                    // 40 zanyatie - zamikanie functions i lecksicheskoe okruzjenie  //
+
+// let number = 5; debugger
+
+// function logNumber() {
+//     console.log(number);debugger
+// }
+
+// number = 6;
+
+// logNumber();debugger
+
+// number = 8;
+
+// logNumber();debugger
+
+// function createCounter() {
+//     let counter = 0;
+
+//     const myFunction = function() {debugger
+//         counter = counter + 1;debugger
+//         return counter;debugger
+//     }
+    
+//     return myFunction;
+// }
+// debugger
+// const increment = createCounter();debugger
+// const c1 = increment();debugger
+// const c2 = increment();debugger
+// const c3 = increment();debugger
+
+// console.log(c1, c2, c3);
+
+// {
+//     let msg = 'hello';
+// }
+
+// console.log(msg);
+
+// for (let i = 0; i < 9; i++) {
+//     for (let j = 0; j < 9; j++) {
+//         let num = 3;
+//     }
+
+//     console.log(num);
+// }
+
+                    // 41 zanyatie - zadachi iz sobesedovaniya  //
+
+// 1) Какое будет выведено значение: let x = 5; alert( x++ ); ? === 5 ибо сделано постфиксный инкремент
+
+// 2) Чему равно такое выражение: [ ] + false - null + true ? === NaN
+
+// 3) Что выведет этот код: let y = 1; let x = y = 2; alert(x); ? === 2
+
+// 4) Чему равна сумма [ ] + 1 + 2? === "12"
+
+// 5) Что выведет этот код: alert( "1"[0] )? === "1"
+
+// 6) Чему равно 2 && 1 && null && 0 && undefined ? === null
+
+// 7) Есть ли разница между выражениями? !!( a && b ) и (a && b)? === da
+
+// 8) Что выведет этот код: alert( null || 2 && 3 || 4 ); ? === 3
+
+// 9) a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ? === net
+
+// 10) Что выведет этот код: alert( +"Infinity" ); ? === infinity
+
+// 11) Верно ли сравнение: "Ёжик" > "яблоко"? === false
+
+// 12) Чему равно 0 || "" || 2 || undefined || true || falsе ? === 2
+
+
+                    // 42 zanyatie - poluchenie elementov  //
+
+
+// const box = document.getElementById('box');
+
+// console.log(box);
+
+// const btns = document.getElementsByTagName('button');
+
+// console.log(btns[0]);
+
+// const circles = document.getElementsByClassName('circle');
+// console.log(circles[0]);
+
+// const hearts = document.querySelectorAll('.heart');
+
+// console.log(hearts);
+
+// hearts.forEach(item => {
+//     console.log(item);
+// });
+
+// const oneHeart = document.querySelector('.heart')
+
+// console.log(oneHeart);
