@@ -857,7 +857,7 @@
 // console.log(oneHeart);
 
 
-                    // 43 zanyatie - deistvie s elementomi  //
+                    // 43 zanyatie - deistvie s elementami  //
 
 // const box = document.getElementById('box'),
 //       btns = document.getElementsByTagName('button'),
@@ -910,4 +910,4 @@
 // div.insertAdjacentHTML('afterend', '<h2>Hello</h2>');
 
 
-                    // 44 zanyatie - deistvie s elementomi  //
+                    // 44 zanyatie - deistvie s elementami  //
