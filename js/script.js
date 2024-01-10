@@ -926,37 +926,78 @@
 5) Добавить нумерацию выведенных фильмов */
 
 
-const movieDB = {
-    movies: [
-        "Логан",
-        "Лига справедливости",
-        "Ла-ла лэнд",
-        "Одержимость",
-        "Скотт Пилигрим против..."
-    ]
-};
+// const movieDB = {
+//     movies: [
+//         "Логан",
+//         "Лига справедливости",
+//         "Ла-ла лэнд",
+//         "Одержимость",
+//         "Скотт Пилигрим против..."
+//     ]
+// };
                     
-const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
-      promoBg = document.querySelector('.promo__bg'), // 3
-      promoGenre = promoBg.querySelector('.promo__genre'), // 2
-      promoInteractiveTitle = document.querySelector('.promo__interactive-list'); // 4
+// const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
+//       promoBg = document.querySelector('.promo__bg'), // 3
+//       promoGenre = promoBg.querySelector('.promo__genre'), // 2
+//       promoInteractiveTitle = document.querySelector('.promo__interactive-list'); // 4
                     
-promoBlocks.forEach((item) => {
-    item.remove();
-}); // 1
+// promoBlocks.forEach((item) => {
+//     item.remove();
+// }); // 1
                     
-promoGenre.textContent = 'драма'; // 2
+// promoGenre.textContent = 'драма'; // 2
                     
-promoBg.style.background = 'url(../img/bg.jpg)'; // 3
+// promoBg.style.background = 'url(../img/bg.jpg)'; // 3
                     
-movieDB.movies.sort(); // 4
+// movieDB.movies.sort(); // 4
                     
-promoInteractiveTitle.innerHTML = ''; // 4
+// promoInteractiveTitle.innerHTML = ''; // 4
                     
-movieDB.movies.forEach((film, i) => {
-    promoInteractiveTitle.innerHTML += `
-        <li class="promo__interactive-item">${i + 1}. ${film}
-            <div class="delete"></div>
-        </li>
-    `
-}); // 4
+// movieDB.movies.forEach((film, i) => {
+//     promoInteractiveTitle.innerHTML += `
+//         <li class="promo__interactive-item">${i + 1}. ${film}
+//             <div class="delete"></div>
+//         </li>
+//     `
+// }); // 4
+
+                    // 45 zanyatie - sobitiya i ih obrabotka  //
+
+                    // Было выполнено с другим HTML и CSS, здесь
+                // только чтобы можно было вспомнить урок
+
+// const btns = document.querySelectorAll('button'),
+//       overlay = document.querySelector('.overlay');
+
+// btn.onclick = function() {
+//     alert('Click');
+// };
+
+// btn.onclick = function() {
+//     alert('Second click');
+// };
+
+// let i = 0;
+// const deleteElement = (e) => {
+//     console.log(e.currentTarget);
+//     console.log(e.type);
+    // i++
+    // if (i == 1) {
+    //     btn.removeEventListener('click', deleteElement);
+    // }
+// }
+
+// btn.addEventListener('click', deleteElement);
+// overlay.addEventListener('click', deleteElement);
+
+// btns.forEach(btn => {
+//     btn.addEventListener('click', deleteElement);
+// });
+
+// const link = document.querySelector('a');
+
+// link.addEventListener('click', (event) => {
+//     event.preventDefault();
+
+//     console.log(event.target);
+// });
