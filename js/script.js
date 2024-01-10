@@ -910,4 +910,53 @@
 // div.insertAdjacentHTML('afterend', '<h2>Hello</h2>');
 
 
-                    // 44 zanyatie - deistvie s elementami  //
+                    // 44 zanyatie - practika na deistvie s elementami  //
+/* Задания на урок:
+
+1) Удалить все рекламные блоки со страницы (правая часть сайта) ---
+
+2) Изменить жанр фильма, поменять "комедия" на "драма"
+
+3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+Реализовать только при помощи JS
+
+4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+Отсортировать их по алфавиту 
+
+5) Добавить нумерацию выведенных фильмов */
+
+
+const movieDB = {
+    movies: [
+        "Логан",
+        "Лига справедливости",
+        "Ла-ла лэнд",
+        "Одержимость",
+        "Скотт Пилигрим против..."
+    ]
+};
+                    
+const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
+      promoBg = document.querySelector('.promo__bg'), // 3
+      promoGenre = promoBg.querySelector('.promo__genre'), // 2
+      promoInteractiveTitle = document.querySelector('.promo__interactive-list'); // 4
+                    
+promoBlocks.forEach((item) => {
+    item.remove();
+}); // 1
+                    
+promoGenre.textContent = 'драма'; // 2
+                    
+promoBg.style.background = 'url(../img/bg.jpg)'; // 3
+                    
+movieDB.movies.sort(); // 4
+                    
+promoInteractiveTitle.innerHTML = ''; // 4
+                    
+movieDB.movies.forEach((film, i) => {
+    promoInteractiveTitle.innerHTML += `
+        <li class="promo__interactive-item">${i + 1}. ${film}
+            <div class="delete"></div>
+        </li>
+    `
+}); // 4
