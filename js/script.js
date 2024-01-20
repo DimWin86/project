@@ -1121,4 +1121,194 @@
 // console.log(result[0] / result[1]);
 
 
-                    // 48 zanyatie - practika  //
+                    // 48 zanyatie - practika #5 //
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+
+//     const personalMovieDB = {
+//           count: 0,
+//           movies: {},
+//           actors: {},
+//           genres: [],
+//           privat: false,
+//           start: function () {
+//           personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+        
+//             while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+//                 personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//             }
+//         },
+//     rememberMyFilms: function () {
+//         for (let i = 0; i < 2; i++) {
+//             const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
+//                   b = prompt('На сколько оцените его?', '').trim();
+            
+//             if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
+//                 personalMovieDB.movies[a] = b;
+//                 console.log('done');
+//             } else {
+//                 console.log('Error');
+//                 i--;
+//             }
+//         }
+//     },
+//     detectPersonaLevel: function () {
+//         if (personalMovieDB.count > 30) {
+//             alert('Вы киноман');
+//         } else if (personalMovieDB.count >= 10) {
+//             alert('Вы классический зритель');
+//         } else if (personalMovieDB.count < 10) {
+//             alert('Просмотренно довольно мало фильмов');
+//         } else {
+//             alert('Произошла ошибка');
+//         }
+//     },
+//     showMyDB: function (hidden) {
+//         if (!hidden) {
+//             console.log(personalMovieDB);
+//         }
+//     },
+//     toggleVisibleMyDB: function () {
+//         if (personalMovieDB.privat) {
+//             personalMovieDB.privat = false;
+//         } else {
+//             personalMovieDB.privat = true;
+//         }
+//     },
+//     writeYourGenres: function () {
+//         for (let i = 0; i < 3; i++) {
+//             const genere = prompt(`Ваш любимый жанр под номером ${i + 1}`);
+//             if (genere != null && genere != '') {
+//                 personalMovieDB.genres[i] = genere;
+//             } else {
+//                 i--;
+//             }
+//         }
+    
+//         personalMovieDB.genres.forEach((item, i) => {
+//             console.log(`Любимый жанр ${i + 1} - это ${item}`);
+//         });
+//     }
+//     };
+    
+//     const movieDB = {
+//          movies: [
+//             "Логан",
+//             "Лига справедливости",
+//             "Ла-ла лэнд",
+//             "Одержимость",
+//             "Скотт Пилигрим против..."
+//         ]
+//     };
+                            
+//     const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
+//           promoBg = document.querySelector('.promo__bg'), // 3
+//           promoGenre = promoBg.querySelector('.promo__genre'), // 2
+//           promoInteractiveTitle = document.querySelector('.promo__interactive-list'),
+//           buttonAddFilm = document.querySelector('form.add'), 
+//           formAddFilm = document.querySelector('.adding__input'),
+//           inputArrElements = document.querySelectorAll('input'),
+//           formCheckboxClick = inputArrElements[2],
+//           deleteAdv = (arr) => {
+//             arr.forEach(item => {
+//                 item.remove();
+//             });
+//           },
+//           makeChanges = () => {
+//             promoGenre.textContent = 'драма'; 
+                            
+//             promoBg.style.backgroundImage = 'url(../img/bg.jpg)'; 
+//           },
+//           sortArr = (arr) => {
+//             arr.sort();
+//           },
+//           createMovieList = (films, parent) => {
+//             parent.innerHTML = '';
+//             sortArr(movieDB.movies);                 
+
+//             films.forEach((film, i) => {
+//                 parent.innerHTML += `
+//                     <li class="promo__interactive-item">${i + 1}. ${film}
+//                         <div class="delete"></div>
+//                     </li>
+//                  `
+//             }); 
+
+//             document.querySelectorAll('.delete').forEach((btn, i) => {
+//                 btn.addEventListener('click', () => {         
+//                     console.log(btn.parentElement);
+//                     btn.parentElement.remove();
+//                     movieDB.movies.splice(i, 1);
+        
+//                     createMovieList(movieDB.movies, promoInteractiveTitle);
+//                 });
+//             });
+//           };
+
+//     buttonAddFilm.addEventListener('submit', (event) => {
+    
+//         event.preventDefault();
+    
+//         const formAddFilmText = formAddFilm.value.trim();
+    
+
+//         if (formAddFilmText.length < 21 && formAddFilmText != '') {
+//             movieDB.movies.push(formAddFilmText);
+//         } else if (formAddFilmText != '') {
+//             movieDB.movies.push(formAddFilmText.slice(0, 21) + '...');
+//         } else {
+//             return;
+//         }
+    
+//         createMovieList(movieDB.movies, promoInteractiveTitle);
+        
+
+//         if (formCheckboxClick.checked) {
+//             console.log('Добавляем любимый фильм');
+//         };
+        
+
+//         event.target.reset();
+//     });
+
+
+//     deleteAdv(promoBlocks);    
+//     makeChanges();
+//     createMovieList(movieDB.movies, promoInteractiveTitle);
+      
+// });
+
+
+                    // 49 zanyatie - Sobitiya na telephone //
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const box = document.querySelector('.box');
+                      
+//     // box.addEventListener('touchstart', (e) => {
+//     //   e.preventDefault();
+                      
+//     //   console.log('Start');
+//     //   console.log(e.targetTouches);
+//     // });
+                      
+//     box.addEventListener('touchmove', (e) => {
+//         e.preventDefault();
+                      
+//         console.log(e.targetTouches[0].pageX);
+//     }); 
+                      
+                      
+//     //   box.addEventListener('touchend', (e) => {
+//     //     e.preventDefault();
+                      
+//     //     console.log('End');
+//     //   }); 
+                      
+//     // box.addEventListener('touchend', (e) => {
+//     //   e.preventDefault();
+                      
+//     //   console.log('End');
+//     // }); 
+// });
