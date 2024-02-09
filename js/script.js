@@ -1314,6 +1314,69 @@
 // });
 
 
+                    // 53 zanyatie - Operatori nuilivogo sliyaniya //
+
+
+
+
+// const box = document.querySelector('.box');
+
+// const newHeight = 100;
+// const newWidth = 400;
+                    
+// function changeParams(elem, h, w) {
+//     elem.style.height = `${h ?? 200}px`;
+//     elem.style.width = `${w ?? 200}px`;
+//     elem.innerHTML = (h ?? 200) * (w ?? 200);
+// }
+                    
+// changeParams(box, newHeight, newWidth);
+                    
+// let userName;
+// let userKey;
+                    
+// console.log(userName ?? userKey ?? 'User');                    
+
+
+
+
+                    // 54 zanyatie - Operator opcionalnoi cepochki //
+
+
+                    
+// const box = document.querySelector('.box');
+// const block = document.querySelector('.block');
+
+// console.log(block)
+
+// if (block) {
+//     console.log(block.textContent);
+// }
+
+// block?.textContent = '123';
+
+// console.log(1 + 2);
+
+// const userData = {
+//     name: 'Ivan',
+//     age: null,
+//     say: function() {
+//         console.log('Hello');
+//     }
+// };
+
+// userData.say();
+// userData.hey?.();
+
+// if (userData && userData.skills && userData.skills.js) {
+//     console.log(userData.skills.js);
+// }
+
+// console.log(userData?.skills?.js);
+
+
+
+
                     // 63 zanyatie - ClassList and deligirovanie sobitiy //
 
 
@@ -1357,3 +1420,138 @@
 // const btn = document.createElement('button');
 // btn.classList.add('red');
 // wrapper.append(btn);
+
+
+                   // 65 zanyatie - setTimeout i setInterval //
+
+// const btn = document.querySelector('.btn');
+// let timerId,
+//     i = 0;
+
+// function myAnimation() {
+//   const elem = document.querySelector('.box');
+//   let pos = 0;
+
+//   const id = setInterval(frame, 10);
+//   function frame() {
+//     if (pos == 300) {
+//       clearInterval(id);
+//     } else {
+//       pos++;
+//       elem.style.top = pos + 'px';
+//       elem.style.left = pos + 'px';
+//     }
+//   }
+// }
+
+// btn.addEventListener('click', myAnimation);
+
+
+
+
+// function logger () {
+//   if (i === 3) {
+//     clearInterval(timerId);
+//   }
+//   console.log('text');
+//   i++;
+// }
+
+// let id = setTimeout(function log(){
+//   console.log('Hello');
+//   id = setTimeout(log, 500);
+// }, 500);
+
+
+                   // 67 sborshik musora i utechka pamyati //
+
+
+
+    // function func() {
+    //     smth = 'string';
+    //     window.smth = 'string'; --> Создаёт засоряющую переменную
+    // }
+
+    // const someRes = getData();
+    // const node = document.querySelector('.class');
+
+    // setInterval(function() {
+    //     if (node) {
+    //         node.innerHTML = someRes;
+    //     }
+    // }, 1000);
+
+    // function outer() {
+    //     const potentiallyHugeArray = [];
+    //     return function inner() {
+    //         potentiallyHugeArray.push('hello');
+    //         console.log('hello!!');
+    //     }
+    // }
+
+    // const sayHello = outer();
+
+    // function createElement() {
+    //     const div = document.createElement('div');
+    //     div.id = 'test';
+    //     return div;
+    // }
+
+    // const testDiv = createElement();
+
+    // document.body.append(testDiv);
+
+    // function deleteElement() {
+    //     document.body.removeChild(document.getElementById('test'));
+    // }
+
+    // deleteElement();
+
+
+
+                       // 68 - job a date //
+
+
+// const now = new Date();
+
+// console.log(now); == 2024-02-09T23:17:25
+
+// const now = new Date('2024-02-09');
+
+// console.log(now); == 2024-02-09T00:00:00
+
+// const now = new Date(0);
+
+// console.log(now); == 1970-01-01T00:00:00.000Z
+
+// const now = new Date(-5000);
+
+// console.log(now); == 1969-12-31T23:59:55.000Z
+
+
+// const now = new Date('2024-02-09');
+// new Date.parse('2024-02-09'); == new Date('2024-02-09');
+
+// console.log(now.setHours(18));
+// console.log(now);
+
+
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+
+// let start = new Date();
+
+// for (let i = 0; i < 10000000000; i++) {
+//     let some = i ** 3;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл отработал за - ${(end - start) / 1000} секунд`);
