@@ -130,7 +130,7 @@
 //     for (let j = 0; j < i; j++) {
 //         result += '*';
 //     }
-    
+
 //     result += '\n';
 // }
 
@@ -146,10 +146,10 @@
 //         }
 //     }
 // }
-  
 
 
-                        // 2 Практика //
+
+// 2 Практика //
 // const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
 
 // const personalMovieDB = {
@@ -187,7 +187,7 @@
 // console.log(personalMovieDB);
 
 
-                        // 25 zanatie - funtions //
+// 25 zanatie - funtions //
 
 // let num = 20;
 
@@ -230,7 +230,7 @@
 // console.log(calc(10, 5));
 // console.log(calc(7, 3));
 
-                        //  26 zanatie - dop.mat., function  //
+//  26 zanatie - dop.mat., function  //
 
 // const usdCurr = 28;
 // const eurCurr = 32;
@@ -242,8 +242,8 @@
 // convert(500, usdCurr);
 // convert(500, eurCurr);
 
-                       // 27 zanatie - pro vajnost' return  //
-               
+// 27 zanatie - pro vajnost' return  //
+
 // const usdCurr = 28;
 // const eurCurr = 32;
 // const discount = 0.9;
@@ -273,7 +273,7 @@
 // console.log(doNothing() === undefined);
 
 
-                       // 28 zanatie - metodi i svoistva stok i chisel  //
+// 28 zanatie - metodi i svoistva stok i chisel  //
 
 // const str = "teSt";
 
@@ -303,8 +303,8 @@
 
 
 
-                       // 29 zanatie - practicheskoe zanyatie #3  
-                       // && 30 znatie - method trim //
+// 29 zanatie - practicheskoe zanyatie #3  
+// && 30 znatie - method trim //
 
 
 // let numberOfFilms;
@@ -331,7 +331,7 @@
 //     for (let i = 0; i < 2; i++) {
 //         const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
 //               b = prompt('На сколько оцените его?', '').trim();
-    
+
 //         if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
 //             personalMovieDB.movies[a] = b;
 //             console.log('done');
@@ -374,7 +374,7 @@
 
 // showMyDB(personalMovieDB.privat);
 
-                     // 31 zanyatie - callback funtons  //
+// 31 zanyatie - callback funtons  //
 
 // function first() {
 //     // Do something
@@ -401,7 +401,7 @@
 
 // learnJs('JavaScript', done);
 
-                     // 32 zanyatie - objects destructurization  //
+// 32 zanyatie - objects destructurization  //
 
 // const options = {
 //     name: 'test',
@@ -442,7 +442,7 @@
 
 // console.log(counter);
 
-                    // 33 zanyatie - massiv i psevdoMassiv  //
+// 33 zanyatie - massiv i psevdoMassiv  //
 
 // const arr = [2, 13, 26, 8, 10];
 // arr.sort(campareNum);
@@ -478,7 +478,7 @@
 // products.sort();
 // console.log(products.join('; '));
 
-                    // 35 zanyatie - peredacha dannih  //
+// 35 zanyatie - peredacha dannih  //
 
 // let a = 5,
 //     b = a;
@@ -575,7 +575,7 @@
 
 // const newObj = {...q};
 
-                    // 36 zanyatie - Osnovi OOP prototype  //
+// 36 zanyatie - Osnovi OOP prototype  //
 
 // let str = "some";
 // let strObj = new String(str);
@@ -606,7 +606,7 @@
 // console.log(jonh.armor);
 // jonh.sayHello();
 
-                    // 37 zanyatie - practicheskoe zanyatie №4  //
+// 37 zanyatie - practicheskoe zanyatie №4  //
 
 // const personalMovieDB = {
 //     count: 0,
@@ -616,7 +616,7 @@
 //     privat: false,
 //     start: function () {
 //         personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
-    
+
 //         while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
 //             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
 //         }
@@ -625,7 +625,7 @@
 //         for (let i = 0; i < 2; i++) {
 //             const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
 //                   b = prompt('На сколько оцените его?', '').trim();
-        
+
 //             if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
 //                 personalMovieDB.movies[a] = b;
 //                 console.log('done');
@@ -674,7 +674,7 @@
 //     }
 // };
 
-                    // 38 zanyatie - search errors in console  //
+// 38 zanyatie - search errors in console  //
 
 // function hello() {
 //     console.log('Hello World');
@@ -697,7 +697,7 @@
 
 // console.log(sorted);
 
-                    // 39 zanyatie - dynamic tipization  //
+// 39 zanyatie - dynamic tipization  //
 
 
 ///////////////////////////////////////////////////////////////////////
@@ -746,7 +746,7 @@
 // switcher = 1;
 
 // if (switcher) {
-    // console.log('Working...');
+// console.log('Working...');
 // }
 
 // 2)
@@ -755,7 +755,7 @@
 // 3)
 // console.log(typeof(!!'444'));
 
-                    // 40 zanyatie - zamikanie functions i lecksicheskoe okruzjenie  //
+// 40 zanyatie - zamikanie functions i lecksicheskoe okruzjenie  //
 
 // let number = 5; debugger
 
@@ -778,7 +778,7 @@
 //         counter = counter + 1;debugger
 //         return counter;debugger
 //     }
-    
+
 //     return myFunction;
 // }
 // debugger
@@ -803,7 +803,7 @@
 //     console.log(num);
 // }
 
-                    // 41 zanyatie - zadachi iz sobesedovaniya  //
+// 41 zanyatie - zadachi iz sobesedovaniya  //
 
 // 1) Какое будет выведено значение: let x = 5; alert( x++ ); ? === 5 ибо сделано постфиксный инкремент
 
@@ -830,7 +830,7 @@
 // 12) Чему равно 0 || "" || 2 || undefined || true || falsе ? === 2
 
 
-                    // 42 zanyatie - poluchenie elementov  //
+// 42 zanyatie - poluchenie elementov  //
 
 
 // const box = document.getElementById('box');
@@ -857,7 +857,7 @@
 // console.log(oneHeart);
 
 
-                    // 43 zanyatie - deistvie s elementami  //
+// 43 zanyatie - deistvie s elementami  //
 
 // const box = document.getElementById('box'),
 //       btns = document.getElementsByTagName('button'),
@@ -910,7 +910,7 @@
 // div.insertAdjacentHTML('afterend', '<h2>Hello</h2>');
 
 
-                    // 44 zanyatie - practika na deistvie s elementami  //
+// 44 zanyatie - practika na deistvie s elementami  //
 /* Задания на урок:
 
 1) Удалить все рекламные блоки со страницы (правая часть сайта) ---
@@ -935,24 +935,24 @@
 //         "Скотт Пилигрим против..."
 //     ]
 // };
-                    
+
 // const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
 //       promoBg = document.querySelector('.promo__bg'), // 3
 //       promoGenre = promoBg.querySelector('.promo__genre'), // 2
 //       promoInteractiveTitle = document.querySelector('.promo__interactive-list'); // 4
-                    
+
 // promoBlocks.forEach((item) => {
 //     item.remove();
 // }); // 1
-                    
+
 // promoGenre.textContent = 'драма'; // 2
-                    
+
 // promoBg.style.background = 'url(../img/bg.jpg)'; // 3
-                    
+
 // movieDB.movies.sort(); // 4
-                    
+
 // promoInteractiveTitle.innerHTML = ''; // 4
-                    
+
 // movieDB.movies.forEach((film, i) => {
 //     promoInteractiveTitle.innerHTML += `
 //         <li class="promo__interactive-item">${i + 1}. ${film}
@@ -961,10 +961,10 @@
 //     `
 // }); // 4
 
-                    // 45 zanyatie - sobitiya i ih obrabotka  //
+// 45 zanyatie - sobitiya i ih obrabotka  //
 
-                    // Было выполнено с другим HTML и CSS, здесь
-                // только чтобы можно было вспомнить урок
+// Было выполнено с другим HTML и CSS, здесь
+// только чтобы можно было вспомнить урок
 
 // const btns = document.querySelectorAll('button'),
 //       overlay = document.querySelector('.overlay');
@@ -981,10 +981,10 @@
 // const deleteElement = (e) => {
 //     console.log(e.currentTarget);
 //     console.log(e.type);
-    // i++
-    // if (i == 1) {
-    //     btn.removeEventListener('click', deleteElement);
-    // }
+// i++
+// if (i == 1) {
+//     btn.removeEventListener('click', deleteElement);
+// }
 // }
 
 // btn.addEventListener('click', deleteElement);
@@ -1003,12 +1003,12 @@
 // });
 
 
-                    // 46 zanyatie - navigaziya po DOM derevu  //
+// 46 zanyatie - navigaziya po DOM derevu  //
 
 
 
 
-                    // 47 zanyatie - rekursiya  //
+// 47 zanyatie - rekursiya  //
 
 // function pow(x, n) {
 //     let result = 1;
@@ -1056,7 +1056,7 @@
 //             name: 'Sam',
 //             progress: 10
 //         }],
-        
+
 //         semi: {
 //             students: [{
 //                 name: 'test',
@@ -1121,7 +1121,7 @@
 // console.log(result[0] / result[1]);
 
 
-                    // 48 zanyatie - practika #5 //
+// 48 zanyatie - practika #5 //
 
 
 
@@ -1135,7 +1135,7 @@
 //           privat: false,
 //           start: function () {
 //           personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
-        
+
 //             while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
 //                 personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
 //             }
@@ -1144,7 +1144,7 @@
 //         for (let i = 0; i < 2; i++) {
 //             const a = prompt('Один из последних просмотренных фильмов?', '').trim(),
 //                   b = prompt('На сколько оцените его?', '').trim();
-            
+
 //             if (a != null && b != null && a != '' && b != '' && a.length < 50 ) {
 //                 personalMovieDB.movies[a] = b;
 //                 console.log('done');
@@ -1186,13 +1186,13 @@
 //                 i--;
 //             }
 //         }
-    
+
 //         personalMovieDB.genres.forEach((item, i) => {
 //             console.log(`Любимый жанр ${i + 1} - это ${item}`);
 //         });
 //     }
 //     };
-    
+
 //     const movieDB = {
 //          movies: [
 //             "Логан",
@@ -1202,7 +1202,7 @@
 //             "Скотт Пилигрим против..."
 //         ]
 //     };
-                            
+
 //     const promoBlocks = document.querySelectorAll('.promo__adv img'), // 1
 //           promoBg = document.querySelector('.promo__bg'), // 3
 //           promoGenre = promoBg.querySelector('.promo__genre'), // 2
@@ -1218,7 +1218,7 @@
 //           },
 //           makeChanges = () => {
 //             promoGenre.textContent = 'драма'; 
-                            
+
 //             promoBg.style.backgroundImage = 'url(../img/bg.jpg)'; 
 //           },
 //           sortArr = (arr) => {
@@ -1241,18 +1241,18 @@
 //                     console.log(btn.parentElement);
 //                     btn.parentElement.remove();
 //                     movieDB.movies.splice(i, 1);
-        
+
 //                     createMovieList(movieDB.movies, promoInteractiveTitle);
 //                 });
 //             });
 //           };
 
 //     buttonAddFilm.addEventListener('submit', (event) => {
-    
+
 //         event.preventDefault();
-    
+
 //         const formAddFilmText = formAddFilm.value.trim();
-    
+
 
 //         if (formAddFilmText.length < 21 && formAddFilmText != '') {
 //             movieDB.movies.push(formAddFilmText);
@@ -1261,14 +1261,14 @@
 //         } else {
 //             return;
 //         }
-    
+
 //         createMovieList(movieDB.movies, promoInteractiveTitle);
-        
+
 
 //         if (formCheckboxClick.checked) {
 //             console.log('Добавляем любимый фильм');
 //         };
-        
+
 
 //         event.target.reset();
 //     });
@@ -1277,44 +1277,44 @@
 //     deleteAdv(promoBlocks);    
 //     makeChanges();
 //     createMovieList(movieDB.movies, promoInteractiveTitle);
-      
+
 // });
 
 
-                    // 49 zanyatie - Sobitiya na telephone //
+// 49 zanyatie - Sobitiya na telephone //
 
 // window.addEventListener('DOMContentLoaded', () => {
 //     const box = document.querySelector('.box');
-                      
+
 //     // box.addEventListener('touchstart', (e) => {
 //     //   e.preventDefault();
-                      
+
 //     //   console.log('Start');
 //     //   console.log(e.targetTouches);
 //     // });
-                      
+
 //     box.addEventListener('touchmove', (e) => {
 //         e.preventDefault();
-                      
+
 //         console.log(e.targetTouches[0].pageX);
 //     }); 
-                      
-                      
+
+
 //     //   box.addEventListener('touchend', (e) => {
 //     //     e.preventDefault();
-                      
+
 //     //     console.log('End');
 //     //   }); 
-                      
+
 //     // box.addEventListener('touchend', (e) => {
 //     //   e.preventDefault();
-                      
+
 //     //   console.log('End');
 //     // }); 
 // });
 
 
-                    // 53 zanyatie - Operatori nuilivogo sliyaniya //
+// 53 zanyatie - Operatori nuilivogo sliyaniya //
 
 
 
@@ -1323,27 +1323,27 @@
 
 // const newHeight = 100;
 // const newWidth = 400;
-                    
+
 // function changeParams(elem, h, w) {
 //     elem.style.height = `${h ?? 200}px`;
 //     elem.style.width = `${w ?? 200}px`;
 //     elem.innerHTML = (h ?? 200) * (w ?? 200);
 // }
-                    
+
 // changeParams(box, newHeight, newWidth);
-                    
+
 // let userName;
 // let userKey;
-                    
+
 // console.log(userName ?? userKey ?? 'User');                    
 
 
 
 
-                    // 54 zanyatie - Operator opcionalnoi cepochki //
+// 54 zanyatie - Operator opcionalnoi cepochki //
 
 
-                    
+
 // const box = document.querySelector('.box');
 // const block = document.querySelector('.block');
 
@@ -1377,12 +1377,12 @@
 
 
 
-                    // 63 zanyatie - ClassList and deligirovanie sobitiy //
+// 63 zanyatie - ClassList and deligirovanie sobitiy //
 
 
 
 // const btns = document.querySelectorAll('button'),
-    //   wrapper = document.querySelector('.btn-block');
+//   wrapper = document.querySelector('.btn-block');
 
 // console.log(btns[0].classList.length);
 // console.log(btns[0].classList.item(1));
@@ -1396,11 +1396,11 @@
 
 // btns[0].addEventListener('click', () => {
 //   btns[1].classList.toggle('red');
-  // if (!btns[1].classList.contains('red')) {
-  //   btns[1].classList.add('red');
-  // } else {
-  //   btns[1].classList.remove('red');
-  // }
+// if (!btns[1].classList.contains('red')) {
+//   btns[1].classList.add('red');
+// } else {
+//   btns[1].classList.remove('red');
+// }
 
 // });
 
@@ -1422,7 +1422,7 @@
 // wrapper.append(btn);
 
 
-                   // 65 zanyatie - setTimeout i setInterval //
+// 65 zanyatie - setTimeout i setInterval //
 
 // const btn = document.querySelector('.btn');
 // let timerId,
@@ -1463,53 +1463,53 @@
 // }, 500);
 
 
-                   // 67 sborshik musora i utechka pamyati //
+// 67 sborshik musora i utechka pamyati //
 
 
 
-    // function func() {
-    //     smth = 'string';
-    //     window.smth = 'string'; --> Создаёт засоряющую переменную
-    // }
+// function func() {
+//     smth = 'string';
+//     window.smth = 'string'; --> Создаёт засоряющую переменную
+// }
 
-    // const someRes = getData();
-    // const node = document.querySelector('.class');
+// const someRes = getData();
+// const node = document.querySelector('.class');
 
-    // setInterval(function() {
-    //     if (node) {
-    //         node.innerHTML = someRes;
-    //     }
-    // }, 1000);
+// setInterval(function() {
+//     if (node) {
+//         node.innerHTML = someRes;
+//     }
+// }, 1000);
 
-    // function outer() {
-    //     const potentiallyHugeArray = [];
-    //     return function inner() {
-    //         potentiallyHugeArray.push('hello');
-    //         console.log('hello!!');
-    //     }
-    // }
+// function outer() {
+//     const potentiallyHugeArray = [];
+//     return function inner() {
+//         potentiallyHugeArray.push('hello');
+//         console.log('hello!!');
+//     }
+// }
 
-    // const sayHello = outer();
+// const sayHello = outer();
 
-    // function createElement() {
-    //     const div = document.createElement('div');
-    //     div.id = 'test';
-    //     return div;
-    // }
+// function createElement() {
+//     const div = document.createElement('div');
+//     div.id = 'test';
+//     return div;
+// }
 
-    // const testDiv = createElement();
+// const testDiv = createElement();
 
-    // document.body.append(testDiv);
+// document.body.append(testDiv);
 
-    // function deleteElement() {
-    //     document.body.removeChild(document.getElementById('test'));
-    // }
+// function deleteElement() {
+//     document.body.removeChild(document.getElementById('test'));
+// }
 
-    // deleteElement();
+// deleteElement();
 
 
 
-                       // 68 - job a date //
+// 68 - job for a date //
 
 
 // const now = new Date();
@@ -1555,3 +1555,83 @@
 // let end = new Date();
 
 // alert(`Цикл отработал за - ${(end - start) / 1000} секунд`);
+
+
+
+
+// 69,70 - create a countdown timer //
+
+
+
+// const deadline = '2024-02-11';
+
+// function getTimeRemaining(endtime) {
+//     let days, hours, minutes, seconds;
+//     const t = Date.parse(endtime) - Date.parse(new Date());
+
+//     if (t <= 0) {
+//         days = 0;
+//         hours = 0;
+//         minutes = 0;
+//         seconds = 0;
+//     } else {
+//         days = Math.floor(t / (1000 * 60 * 60 * 24)),
+//         hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+//         minutes = Math.floor((t / (1000 * 60)) % 60),
+//         seconds = Math.floor((t / 1000) % 60);
+//     }
+        
+
+//     return {
+//         'total': t,
+//         'days': days,
+//         'hours': hours,
+//         'minustes': minutes,
+//         'seconds': seconds
+//     };
+// }
+
+// function getZero(num) {
+//     if (num >= 0 && num < 10) {
+//         return `0${num}`;
+//     } else {
+//         return num;
+//     }
+// }
+
+// function setClock(selector, endtime) {
+//     const timer = document.querySelector(selector),
+//         days = timer.querySelector('#days'),
+//         hours = timer.querySelector('#hours'),
+//         minutes = timer.querySelector('#minutes'),
+//         seconds = timer.querySelector('#seconds'),
+//         timeInterval = setInterval(updateClock, 1000);
+
+//     updateClock();
+
+//     function updateClock() {
+//         const t = getTimeRemaining(endtime);
+
+//         days.innerHTML = getZero(t.days);
+//         hours.innerHTML = getZero(t.hours);
+//         minutes.innerHTML = getZero(t.minustes);
+//         seconds.innerHTML = getZero(t.seconds);
+
+//         console.log(t.total);
+
+//         if (t.total <= 0) {
+//             clearInterval(timeInterval);
+//         }
+//     }
+// }
+
+// setClock('.timer', deadline);
+  
+
+
+
+// 71 //
+
+
+
+
