@@ -1707,4 +1707,22 @@
 //     })
 
 
-// 73 //
+
+// 73 - modification modal window //
+
+
+// const modalTimerId = setTimeout(showModal, 15000)
+
+//     function showModalByScroll() {
+        
+//         if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+//             showModal();
+//             window.removeEventListener('scroll', showModalByScroll);
+//         }
+//     }
+
+//     window.addEventListener('scroll', showModalByScroll);
+
+
+
+// 74 //
