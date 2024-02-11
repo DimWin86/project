@@ -1661,7 +1661,50 @@
 // console.log(document.documentElement.scrollTop);
 
 
-// 72 //
+
+// 72 - create modal window //
 
 
+// const modalTrigger = document.querySelectorAll('[data-modal]'),
+//           modalClose = document.querySelector('[data-close]'),
+//           modal = document.querySelector('.modal');
 
+//     closeModal();
+    
+//     function closeModal() {
+//         modal.classList.remove('show');
+//         modal.classList.add('hide');
+//         document.body.style.overflow = '';
+//     }
+
+//     function showModal() {
+//         modal.classList.remove('hide');
+//         modal.classList.add('show');
+//         modal.classList.add('fade');
+//         document.body.style.overflow = 'hidden';
+//     }
+
+//     modalTrigger.forEach(e => {
+//         e.addEventListener('click', () => {
+//             showModal();
+//         });
+//     });
+
+//     modalClose.addEventListener('click', () => {
+//             closeModal();
+//     });
+
+//     modal.addEventListener('click', (e) => {
+//         if (e.target === modal) {
+//             closeModal();
+//         }
+//     });
+
+//     document.addEventListener('keydown', (e) => {
+//         if (e.code === 'Escape' && modal.classList.contains('show')) {
+//             closeModal();
+//         }
+//     })
+
+
+// 73 //
