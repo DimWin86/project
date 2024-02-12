@@ -1767,7 +1767,6 @@
 //         return a + b;
 //     }
 
-/////////////////////////////////////////////////
 
 //     console.log(sum());
 // }
@@ -1786,7 +1785,6 @@
 
 // obj.sum();
 
-/////////////////////////////////////////////////
 
 // function User(name, id) {
 //     this.name = name;
@@ -1819,26 +1817,133 @@
 // console.log(double(3));
 // console.log(double(13));
 
-const btn = document.querySelector('button');
+// const btn = document.querySelector('button');
 
-btn.addEventListener('click', e => {
-    e.preventDefault();
-    this.style.backgroundColor = 'red';
-});
+// btn.addEventListener('click', e => {
+//     e.preventDefault();
+//     this.style.backgroundColor = 'red';
+// });
 
-const obj = {
-    num: 5,
-    sayNumber: function() {
-        const say = () => {
-            console.log(this.num);
-        };
+// const obj = {
+//     num: 5,
+//     sayNumber: function() {
+//         const say = () => {
+//             console.log(this.num);
+//         };
 
-        say();
-    }
-};
+//         say();
+//     }
+// };
 
-obj.sayNumber();
+// obj.sayNumber();
 
-const double = (a, b) => a * 2;
+// const double = (a, b) => a * 2;
 
-console.log(double(4));
+// console.log(double(4));
+
+
+
+// 77 - Class of ES6 //
+
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this. width = width;
+//     }
+
+//     calcArea() {
+//         return this.height * this.width;
+//     }
+// }
+
+// class ColoredRectangleWithText extends Rectangle {
+//     constructor(height, width, text, bgColor) {
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+
+//     showMyProps() {
+//         console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+//     }
+// }
+
+// const div = new ColoredRectangleWithText(25, 10, 'Hello World', 'red');
+
+// div.showMyProps();
+// console.log(div.calcArea());
+
+// const square = new Rectangle(10, 10);
+// const long = new Rectangle(20, 100);
+
+// console.log(square.calcArea());
+// console.log(long.calcArea());
+
+
+// 79 - Using class for real job //
+
+// class MenuCard {
+//     constructor(src, alt, title, descr, price, parentSelector) {
+//         this.src = src;
+//         this.alt = alt;
+//         this.title = title;
+//         this.descr = descr;
+//         this.price = price;
+//         this.parent = document.querySelector(parentSelector);
+//         this.transfer = 27;
+//         this.changeToUAH();
+//     }
+
+//     changeToUAH() {
+//         return this.price = this.price * this.transfer;
+//     }
+
+//     render() {
+//         const element = document.createElement('div');
+//         element.innerHTML = `<div class="menu__item">
+//                         <img src="${this.src}" alt="${this.alt}">
+//                         <h3 class="menu__item-subtitle">${this.title}</h3>
+//                         <div class="menu__item-descr">${this.descr}</div>
+//                         <div class="menu__item-divider"></div>
+//                         <div class="menu__item-price">
+//                             <div class="menu__item-cost">Цена:</div>
+//                             <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+//                         </div>
+//                     </div>
+//                         `;
+//                         this.parent.append(element);
+
+//         return element;
+
+//     }
+// }
+
+// new MenuCard(
+//     "img/tabs/vegy.jpg", 
+//     'vegy', 
+//     'Меню "Фитнес"', 
+//     'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!', 
+//     9,
+//     '.menu .container',
+//     ).render();
+    
+// new MenuCard(
+//     "img/tabs/elite.jpg", 
+//     'elite', 
+//     'Меню “Премиум”"', 
+//     'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!', 
+//     21,
+//     '.menu .container',
+//     ).render();
+    
+// new MenuCard(
+//     "img/tabs/post.jpg", 
+//     'post', 
+//     'Меню "Постное"', 
+//     'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.', 
+//     16,
+//     '.menu .container',
+//     ).render();
+
+
+// 79 - Rest operator and default parameters //
