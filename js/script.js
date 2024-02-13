@@ -1946,4 +1946,63 @@
 //     ).render();
 
 
-// 79 - Rest operator and default parameters //
+
+// 80 - Rest operator and default parameters //
+
+
+// const log = function(a, b, ...rest) {
+//     console.log(a, b, rest);
+// }
+
+// log('basic', 'rest', 'operator', 'usage');
+
+// function calcOrDouble(number, basis = 2) {
+//     console.log(number * basis);
+// }
+
+// calcOrDouble(3);
+
+// if (this.classes.length === 0) {
+//     this.element = 'menu__item';
+//     element.classList.add(this.element);
+// } else {
+//     this.classes.forEach(className => element.classList.add(className));
+// }
+
+
+// 82 - JSON format //
+
+// const persone = {
+//     name: 'Alex',
+//     tel: '+78161401477'
+// };
+
+// console.log(JSON.stringify(persone)); === {"name":"Alex","tel":"+78161401477"}
+
+// const persone = {
+//     name: 'Alex',
+//     tel: '+78161401477'
+// };
+
+// console.log(JSON.parse(JSON.stringify(persone))); === { name: 'Alex', tel: '+78161401477' }
+
+
+
+// const persone = {
+//     name: 'Alex',
+//     tel: '+78161401477',
+//     parents: {
+//         mom: 'Olga',
+//         dad: 'Mike'
+//     }
+// };
+
+// const clone = JSON.parse(JSON.stringify(persone));
+
+// clone.parents.mom = 'Ann';
+// console.log(persone);
+// console.log(clone);
+
+
+
+// 82 - Ajax and using server//
