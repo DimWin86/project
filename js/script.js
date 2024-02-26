@@ -1580,7 +1580,7 @@
 //         minutes = Math.floor((t / (1000 * 60)) % 60),
 //         seconds = Math.floor((t / 1000) % 60);
 //     }
-        
+
 
 //     return {
 //         'total': t,
@@ -1626,7 +1626,7 @@
 // }
 
 // setClock('.timer', deadline);
-  
+
 
 
 
@@ -1648,7 +1648,7 @@
 // console.log(width, height);
 
 // btn.addEventListener('click', () => {
-    // box.style.height = box.scrollHeight + 'px';
+// box.style.height = box.scrollHeight + 'px';
 //     console.log(box.scrollTop);
 // });
 
@@ -1670,7 +1670,7 @@
 //           modal = document.querySelector('.modal');
 
 //     closeModal();
-    
+
 //     function closeModal() {
 //         modal.classList.remove('show');
 //         modal.classList.add('hide');
@@ -1714,7 +1714,7 @@
 // const modalTimerId = setTimeout(showModal, 15000)
 
 //     function showModalByScroll() {
-        
+
 //         if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
 //             showModal();
 //             window.removeEventListener('scroll', showModalByScroll);
@@ -1926,7 +1926,7 @@
 //     9,
 //     '.menu .container',
 //     ).render();
-    
+
 // new MenuCard(
 //     "img/tabs/elite.jpg", 
 //     'elite', 
@@ -1935,7 +1935,7 @@
 //     21,
 //     '.menu .container',
 //     ).render();
-    
+
 // new MenuCard(
 //     "img/tabs/post.jpg", 
 //     'post', 
@@ -2072,7 +2072,7 @@
 
 //             const request = new XMLHttpRequest();
 //             request.open('POST', 'server.php');
-            
+
 //             request.setRequestHeader('Content-type', 'application/json');
 //             const formData = new FormData(form);
 
@@ -2080,7 +2080,7 @@
 //             formData.forEach(function(value, key){
 //                 object[key] = value;
 //             });
-            
+
 //             const json = JSON.stringify(object);
 
 //             request.send(json);
@@ -2107,30 +2107,85 @@
 // 85 - beautiful user notification //
 
 // function showThanksModal(message) {
-    //     const prevModalDialog = document.querySelector('.modal__dialog');
-    
-    //     prevModalDialog.classList.add('hide');
-    //     showModal();
-    
-    //     const thanksModal = document.createElement('div');
-    //     thanksModal.classList.add('modal__dialog');
-    //     thanksModal.innerHTML = `
-    //         <div class="modal__content"> 
-    //             <div class="modal__close" data-close>×</div>
-    //             <div class="modal__title">${message}</div>
-    //         </div>
-    //     `;
-    
-    //     document.querySelector('.modal').append(thanksModal);
-    //     setTimeout(() => {
-        //         thanksModal.remove();
-        //         prevModalDialog.classList.add('show');
-        //         prevModalDialog.classList.remove('hide');
-        //         closeModal();
-        
-        //     }, 4000);
-        // }
+//     const prevModalDialog = document.querySelector('.modal__dialog');
 
-        
+//     prevModalDialog.classList.add('hide');
+//     showModal();
+
+//     const thanksModal = document.createElement('div');
+//     thanksModal.classList.add('modal__dialog');
+//     thanksModal.innerHTML = `
+//         <div class="modal__content"> 
+//             <div class="modal__close" data-close>×</div>
+//             <div class="modal__title">${message}</div>
+//         </div>
+//     `;
+
+//     document.querySelector('.modal').append(thanksModal);
+//     setTimeout(() => {
+//         thanksModal.remove();
+//         prevModalDialog.classList.add('show');
+//         prevModalDialog.classList.remove('hide');
+//         closeModal();
+
+//     }, 4000);
+// }
+
+
 
 // 86 - Promise ES6 //
+
+// console.log('Запрос данных...');
+
+// const req = new Promise(function (resolve, reject) {
+
+//     setTimeout(() => {
+//         console.log('Подготовка данных...');
+
+//         const product = {
+//             name: 'TV',
+//             price: 2000
+//         };
+        
+//         resolve(product);
+//     }, 2000)
+
+// });
+
+// req.then((product) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             product.status = 'order';
+//             resolve(product);
+//         }, 2000)
+//     });
+// }).then(data => {
+//     data.modify = true;
+//     return data;
+// }).then((data) => {
+//     console.log(data);
+// }).catch(() => {
+//     console.error('Произошла ошибка');
+// }).finally(() => {
+//     setTimeout(() => {
+//         console.log('Все выполнено');
+//     }, 1000);
+// });
+
+// const test = time => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve(), time);
+//     });
+// };
+
+// test(1000).then(() => console.log('1000 ms'));
+// test(2000).then(() => console.log('2000 ms'));
+
+// Promise.all([test(1000), test(2000)]).then(() => {
+//     console.log('All');
+// });
+
+// Promise.race([test(1000), test(2000)]).then(() => {
+//     console.log('race');
+// });
+
