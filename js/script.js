@@ -2189,3 +2189,28 @@
 //     console.log('race');
 // });
 
+
+
+//  87 - Fetch API //
+
+// fetch('server11.php', {
+//     method: 'POST',
+//     headers: {
+//         'Content-type': 'application/json'
+//     },
+//     body: JSON.stringify(object)
+// }).then(data => data.text())
+// .then(data => {
+//     console.log(data);
+//     showThanksModal(message.success);
+//     form.reset();
+//     statusMessage.remove();
+// }).catch(() => {
+//     showThanksModal(message.fail);
+// }).finally(() => {
+//     form.reset();
+// });
+
+
+
+//  88 - Array Iteration Methods  //
