@@ -1,4 +1,6 @@
 {
-    "editor.fontSize": 16
+    "editor.fontSize": 17,
+    "files.autoSave": "off",
+    "editor.fontFamily": "SF Pro Text Medium"
     
 }
